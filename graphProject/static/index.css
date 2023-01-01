@@ -1,0 +1,377 @@
+body {
+background: linear-gradient(to bottom, #E1F5C4, #ffe2c5);
+/*background: #E1F5C4;  green color for background */
+color: #333333; /* dark gray text color */
+font-family: 'Rakkas', cursive; /* modern sans-serif font */
+font-size: 18px; /* slightly smaller font size */
+text-align: center;
+}
+
+a:hover {
+color: #006600 !important; /* dark green color for hover effect */
+text-decoration: none; /* remove underline from hover effect */
+}
+
+a {
+font-family: 'Rakkas', cursive; /* same font as body text */
+text-decoration: none; /* remove underline */
+color: #009900 !important; /* green color for links */
+margin-bottom: 2px;
+transition: .5s;
+margin-right: 15px;
+font-size: 18px; /* same font size as body text */
+}
+
+a.navbar-brand {
+font-size: 22px; /* slightly larger font size for brand name */
+color: #009900 !important; /* green color for brand name */
+}
+
+td {
+font-family: 'Rakkas', cursive; /* same font as body text */
+font-size: 18px; /* same font size as body text */
+color: #333333; /* same text color as body text */
+}
+
+.my-dark-bg {
+background-color: rgba(0, 153, 0, 0.1) !important; /* slightly transparent green color for background */
+}
+
+form {
+background-color: rgba(0, 153, 0, 0.1); /* slightly transparent green color for form background */
+padding: 5px;
+}
+
+.table {
+background-color: rgba(0, 153, 0, 0.1); /* slightly transparent green color for table background */
+border-style: double;
+}
+
+.btn {
+transition: .5s;
+}
+
+.btn:hover {
+color: #006600; /* dark green color for hover effect */
+}
+
+p.names {
+font-size: 18px; /* same font size as body text */
+font-family: 'Rakkas', cursive; /* same font as body text */
+display: inline;
+color: #333333; /* same text color as body text */
+padding-left: 2px;
+padding-right: 2px;
+}
+
+small.text-muted {
+color: #333333 !important; /* same text color as body text */
+}
+
+.form-check-input {
+margin-top: .8rem !important;
+}
+
+.fixed-bottom {
+font-size: 12px;
+margin: 5px;
+border-radius: 40px/40px;
+}
+
+.navbar.navbar-1 .navbar-toggler-icon {
+background-image: url('https://mdbootstrap.com/img/svg/hamburger2.svg?color=009900'); /* modified hamburger icon with green color */
+}
+
+/*
+body {
+	background: linear-gradient(to bottom, #ff9999, #ffcc99);
+	color: #ffffff;
+	font-family: 'Rakkas', cursive;
+	font-size: 18px;
+	text-align: center;
+}
+
+a:hover {
+	color: #000000 !important;
+	text-shadow: 2px 2px #ffffff;
+}
+
+a {
+	font-family: 'Rakkas', cursive;
+	text-decoration: none;
+	color: #000000 !important;
+	margin-bottom: 2px;
+	transition: .5s;
+	margin-right: 15px;
+	font-size: 21px;
+	font-weight: 700;
+}
+
+a.navbar-brand {
+	font-size: 28px;
+	color: #ffffff !important;
+	text-shadow: 2px 2px #000000;
+}
+
+td {
+	font-family: 'Rakkas', cursive;
+	font-size: 32px;
+	color: #ffffff;
+}
+
+.my-dark-bg {
+	background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+form {
+	background-color: rgba(255, 255, 255, 0.2);
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.table {
+	background-color: rgba(255, 255, 255, 0.2);
+	border-style: double;
+	border-radius: 10px;
+}
+
+.btn {
+	transition: .5s;
+	background-color: #000000;
+	color: #ffffff;
+	border: none;
+	border-radius: 10px;
+	font-size: 18px;
+	font-weight: 700;
+	padding: 10px 20px;
+}
+
+.btn:hover {
+	background-color: #ffffff;
+	color: #000000;
+}
+
+p.names {
+	font-size: 26px;
+	font-family: 'Rakkas', cursive;
+	display: inline;
+	color: #ffffff;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+small.text-muted {
+	color: #ffffff !important;
+}
+
+.form-check-input {
+	margin-top: .8rem !important;
+}
+
+.fixed-bottom {
+	font-size: 12px;
+	margin: 5px;
+	border-radius: 40px/40px;
+}
+
+.navbar.navbar-1 .navbar-toggler-icon {
+	background-image: url('https://mdbootstrap.com/img/svg/hamburger2.svg?color=fff');
+}
+*/
+
+/*
+
+body {
+	background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+	color: #333;
+	font-family: Arial, cursive;
+	font-size: 16px;
+	text-align: center;
+  }
+  
+  a {
+	color: #333;
+	text-decoration: none;
+	transition: 0.3s;
+  }
+  
+  a:hover {
+	color: #fff;
+	text-shadow: 2px 2px #ff9a9e;
+  }
+  
+  a.navbar-brand {
+	font-size: 24px;
+	font-weight: bold;
+	color: #fff;
+  }
+  
+  td {
+	font-family: 'Dancing Script', cursive;
+	font-size: 24px;
+	color: #333;
+  }
+  
+  .my-dark-bg {
+	background-color: #333 !important;
+  }
+  
+  form {
+	background-color: #fff;
+	padding: 20px;
+	box-shadow: 2px 2px #ff9a9e;
+	border-radius: 5px;
+  }
+  
+  .table {
+	background-color: #fff;
+	border-collapse: collapse;
+	border-radius: 5px;
+	box-shadow: 2px 2px #ff9a9e;
+  }
+  
+  .btn {
+	background-color: #ff9a9e;
+	border: none;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	transition: 0.3s;
+  }
+  
+  .btn:hover {
+	background-color: #fad0c4;
+	color: #333;
+  }
+  
+  p.names {
+	font-size: 24px; 
+	font-family: 'Dancing Script', cursive;
+	display: inline; 
+	color: #333; 
+	padding-left: 10px;
+	padding-right: 10px;
+  }
+  
+  small.text-muted {
+	color: #999 !important;
+  }
+  
+  .form-check-input {
+	margin-top: 1.5rem !important;
+  }
+  
+  .fixed-bottom {
+	font-size: 12px;
+	margin: 20px;
+	border-radius: 5px;
+	background-color: #ff9a9e;
+	color: #fff;
+	padding: 10px 20px;
+  }
+
+  .navbar.navbar-1 .navbar-toggler-icon {
+	background-image: url('https://mdbootstrap.com/img/svg/hamburger2.svg?color=fff');
+}
+
+
+/*
+body {
+	background: #880808;	
+	color: #fad5c7;
+	background-image: url(./pexels-florin-capilnean-4507866.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 28px;
+	text-align: center;
+}
+
+a:hover {
+	color: white !important;
+	text-shadow: 2px 2px rgb(126, 31, 14);
+}
+
+a{
+	font-family: 'Dancing Script', cursive;
+	text-decoration: none;
+	color: #d3ac9d !important;
+	margin-bottom: 2px;
+	transition : .5s;
+	margin-right: 15px;
+	font-size: 31px;
+}
+
+a.navbar-brand
+{
+	font-size: 38px;
+	color: white !important;
+}
+
+td
+{
+	font-family: 'Dancing Script', cursive;
+	font-size: 42px;
+	color: white;
+}
+
+.my-dark-bg
+{
+	background-color: rgba(0, 0, 0, 0.33) !important;
+}
+
+form
+{
+	background-color: rgba(0, 0, 0, 0.33);
+	padding: 5px;
+}
+
+.table
+{
+	background-color: rgba(0, 0, 0, 0.33);
+	border-style: double;
+}
+
+.btn
+{
+	transition : .5s;
+}
+
+.btn:hover
+{
+	color: rgb(126, 31, 14);
+}
+
+p.names
+{
+	font-size: 36px; 
+	font-family: 'Dancing Script', cursive;
+	display: inline; 
+	color: white; 
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+small.text-muted
+{
+	color: white !important;
+}
+
+.form-check-input 
+{
+    margin-top: .8rem !important;
+}
+
+.fixed-bottom
+{
+	font-size: 12px;
+    margin: 5px;
+	border-radius: 40px/40px;
+}
+
+.navbar.navbar-1 .navbar-toggler-icon {
+	background-image: url('https://mdbootstrap.com/img/svg/hamburger2.svg?color=fff');
+}
+
+*/

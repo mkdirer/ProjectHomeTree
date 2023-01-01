@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+{% block content %}
+<br><br>
+<div class="content-section">
+    {% if not results %}
+    <form method="POST" action="">
+        {{ form.hidden_tag() }}
+        <fieldset class="form-group">
+            <legend class="border-bottom mb-4">Search Relations between members</legend>
+            <div class="form-group">
+                <label for="firstPerson">Choose first member:</label><br>
+                <select name="firstPerson" id="firstPerson" class="form-select">
+                    <option value="">choose member</option>
+                    {% for option in options %}
+                        <option value="{{option[0]}}">{{option[1]}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="secondPerson">Choose second member:</label><br>
+                <select name="secondPerson" id="secondPerson" class="form-select">
+                    <option value="">choose member</option>
+                    {% for option in options %}
+                        <option value="{{option[0]}}">{{option[1]}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+        </fieldset>
+        <div class="form-group">
+            {{ form.submit(class="btn") }}
+        </div>
+    </form>
+    {% else %}
+        {% for result in results %}
+            <p class="names">
+                {{ result[0] }}
+            </p>
+            {{ result[1] }} 
+            <p class="names">
+                {{ result[2] }}
+            </p>
+            <br>
+        {% endfor %}
+    {% endif %}
+</div>
+<div class="text-center p-4 fixed-bottom" style="background-color: #ffe2c5">
+    Łukasz Wajda<br>
+    Przetwarzanie danych w chmurach obliczeniowych<br>
+    2022-12<br><br>
+    <small class="text-muted">
+        Proof-of-concept project
+    </small>
+</div>
+{% endblock content %}

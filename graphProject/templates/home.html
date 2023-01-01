@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block content %}
+    <br><br>
+     <ul class="list-group list-group-flush">
+        <li class="list-group-item my-dark-bg">
+            
+        </li>
+        <li class="list-group-item my-dark-bg">
+            The graph application developed as a proof of concept is designed to represent familial relationships through the use of a data model. 
+            The app allows users to input individuals in chronological order, beginning with the oldest generation, and visualize the resulting family tree. It also facilitates the identification of relationships between different members. 
+            To ensure the accuracy of the represented data, it is important to input individuals in the correct order, and to note that the database can only contain one person with a specific combination of first name, last name, and year of birth. 
+            While some validation measures have been implemented, it is advisable to verify the accuracy of the entered data.
+        </li>
+        <li class="list-group-item my-dark-bg">
+            <picture>
+                <img src="./static/tree.png" alt="Chris standing up holding his daughter Elva" />
+            </picture>
+        </li>
+      </ul>
+
+    <div class="text-center p-4 fixed-bottom" style="background-color: #ffe2c5">
+        Łukasz Wajda<br>
+        Przetwarzanie danych w chmurach obliczeniowych<br>
+        2022-12<br><br>
+        <small class="text-muted">
+            Proof-of-concept project
+        </small>
+    </div>
+{% endblock content %}

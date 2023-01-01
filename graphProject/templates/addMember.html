@@ -1,0 +1,117 @@
+{% extends "layout.html" %}
+{% block content %}
+<br><br>
+<div class="content-section">
+    <form method="POST" action="">
+        {{ form.hidden_tag() }}
+        <fieldset class="form-group">
+            <legend class="border-bottom mb-4">Add member</legend>
+            <div class="form-group">
+                {{ form.firstMemberName.label(class="form-control-label") }}
+
+                {% if form.firstMemberName.errors %}
+                    {{ form.firstMemberName(class="form-control form-control-lg is-invalid") }}
+                    <div class="invalid-feedback">
+                        {% for error in form.firstMemberName.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    {{ form.firstMemberName(class="form-control form-control-lg") }}
+                {% endif %}
+            </div>
+            <div class="form-group">
+                {{ form.LastMemberName.label(class="form-control-label") }}
+                {% if form.LastMemberName.errors %}
+                    {{ form.LastMemberName(class="form-control form-control-lg is-invalid") }}
+                    <div class="invalid-feedback">
+                        {% for error in form.LastMemberName.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    {{ form.LastMemberName(class="form-control form-control-lg") }}
+                {% endif %}
+            </div>
+            <div class="form-group">
+                {{ form.birthMemberYear.label(class="form-control-label") }}
+                {% if form.birthMemberYear.errors %}
+                    {{ form.birthMemberYear(class="form-control form-control-lg is-invalid") }}
+                    <div class="invalid-feedback">
+                        {% for error in form.birthMemberYear.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    {{ form.birthMemberYear(class="form-control form-control-lg") }}
+                {% endif %}
+            </div>
+            <div class="form-group">
+                <label for="memberFirstParent">Choose first parent:</label><br>
+                <select name="memberFirstParent" id="memberFirstParent" class="form-select">
+                    <option value="">choose parent</option>
+                    {% for option in options %}
+                        <option value="{{option[0]}}">{{option[1]}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="memberSecondParent">Choose second parent:</label><br>
+                <select name="memberSecondParent" id="memberSecondParent" class="form-select">
+                    <option value="">choose parent</option>
+                    {% for option in options %}
+                        <option value="{{option[0]}}">{{option[1]}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="marriageNewMember">Choose partner:</label><br>
+                <select name="marriageNewMember" id="marriageNewMember" class="form-select">
+                    <option value="">choose partner</option>
+                    {% for option in options %}
+                        <option value="{{option[0]}}">{{option[1]}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="form-group">
+                {{ form.marriageMemberYear.label(class="form-control-label") }}
+                {% if form.marriageMemberYear.errors %}
+                    {{ form.marriageMemberYear(class="form-control form-control-lg is-invalid") }}
+                    <div class="invalid-feedback">
+                        {% for error in form.marriageMemberYear.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    {{ form.marriageMemberYear(class="form-control form-control-lg") }}
+                {% endif %}
+            </div>
+            <div class="form-group">
+                {{ form.deathMemberYear.label(class="form-control-label") }}
+                {% if form.deathMemberYear.errors %}
+                    {{ form.deathMemberYear(class="form-control form-control-lg is-invalid") }}
+                    <div class="invalid-feedback">
+                        {% for error in form.deathMemberYear.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    {{ form.deathMemberYear(class="form-control form-control-lg") }}
+                {% endif %}
+            </div>
+            <small class="text-muted">!!! The first three fields are mandatory !!!</small>
+        </fieldset>
+        <div class="form-group">
+            {{ form.submit(class="btn") }}
+        </div>
+    </form>
+</div>
+<div class="text-center p-4 fixed-bottom" style="background-color: #ffe2c5">
+    Łukasz Wajda<br>
+    Przetwarzanie danych w chmurach obliczeniowych<br>
+    2022-12<br><br>
+    <small class="text-muted">
+        Proof-of-concept project
+    </small>
+</div>
+{% endblock content %}
