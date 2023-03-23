@@ -8,6 +8,10 @@ The project is a proof of concept and is simplified and limited in scope. The as
 
 The application has several endpoints: home page, family list table, graph display, add member form, search relation form, remove member form, and a clean page for clearing the database.
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/83553257/227318620-930d855b-0f25-4815-9e7c-5a555a1344ce.png" width="80%" height="80%">
+</p>
+
 The connection to Neo4j database was obtained using the neo4j Python library. The graph is created using the networkx module, which provides a relatively easy implementation but may not provide the most aesthetic layout.
 
 Overall, the project is minimalist and straightforward due to its proof of concept nature.
